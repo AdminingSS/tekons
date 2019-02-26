@@ -1,0 +1,30 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="49px" height="49px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="49px" height="49px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="2" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.236" />
+    <feFlood flood-color="rgb(51, 51, 51)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="url(#PSgrad_0)"
+ d="M6.999,2.000 L41.000,2.000 C42.656,2.000 44.000,3.343 44.000,5.000 L44.000,39.000 C44.000,40.657 42.656,42.000 41.000,42.000 L6.999,42.000 C5.343,42.000 3.999,40.657 3.999,39.000 L3.999,5.000 C3.999,3.343 5.343,2.000 6.999,2.000 Z"/>
+</g>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M18.499,15.000 L29.499,15.000 C30.328,15.000 30.999,15.671 30.999,16.500 C30.999,17.328 30.328,18.000 29.499,18.000 L18.499,18.000 C17.671,18.000 17.000,17.328 17.000,16.500 C17.000,15.671 17.671,15.000 18.499,15.000 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M18.499,21.000 L29.499,21.000 C30.328,21.000 30.999,21.671 30.999,22.500 C30.999,23.328 30.328,24.000 29.499,24.000 L18.499,24.000 C17.671,24.000 17.000,23.328 17.000,22.500 C17.000,21.671 17.671,21.000 18.499,21.000 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M18.499,27.000 L29.499,27.000 C30.328,27.000 30.999,27.671 30.999,28.500 C30.999,29.328 30.328,30.000 29.499,30.000 L18.499,30.000 C17.671,30.000 17.000,29.328 17.000,28.500 C17.000,27.671 17.671,27.000 18.499,27.000 Z"/>
+</svg>

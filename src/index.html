@@ -17,63 +17,22 @@
 <body>
 
 <div class="uk-offcanvas-content">
-    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
-        <div>
-
-            <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
-                <nav uk-navbar>
-                    <div class="uk-navbar-left">
-
-                        <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
-                           uk-navbar-toggle-icon uk-toggle></a>
-
-                        <!--logo-->
-                        <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo_tourweek.png" alt="">
-                        </a>
-
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#"></a></li>
-                            <li>
-                                <a href="#"></a>
-
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="uk-navbar-center uk-visible@l"></div>
-
-                    <div class="uk-navbar-right"></div>
-                </nav>
-            </header>
-
-            <!-- Section -->
-            <div class="uk-section">
-                <div class="uk-container">
-
+    <div class="uk-height-viewport uk-background-primary uk-flex uk-flex-middle uk-flex-center">
+        <div class="uk-padding uk-padding-remove-horizontal">
+            <div class="tm-index-logo">
+                <img src="images/logo-index.png" alt="">
+                <!--<div>Spinbol</div>-->
+                <!--<div>World of pen spinning</div>-->
+            </div>
+            <div class="uk-grid-small uk-child-width-1-2@m" data-uk-grid>
+                <div class="uk-flex uk-flex-center">
+                    <a href="login.html" class="tm-index-button uk-button uk-button-secondary">Login</a>
+                </div>
+                <div class="uk-flex uk-flex-center">
+                    <a href="register.html" class="tm-index-button uk-button uk-button-secondary">Registration</a>
                 </div>
             </div>
-
         </div>
-
-        <!--Footer-->
-        <footer class="uk-section">
-            <div class="uk-container">
-
-            </div>
-        </footer>
     </div>
 
     <!-- Off-canvas -->

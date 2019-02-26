@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css" />
+
+    <!-- FA5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+
+            <!--Header-->
+            <header class="uk-navbar-container uk-navbar-transparent uk-position-relative">
+                <nav class="uk-background-primary" uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <!--logo-->
+                        <a class="uk-navbar-item uk-logo" href="/">
+                            <img src="images/logo-header.png" alt="">
+                        </a>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <!--mobile menu toggle-->
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle"
+                           uk-toggle>
+                            <div class="tm-button-menu uk-button-secondary">
+                                <img src="images/menu.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+
+                <div>
+                    <button class="tm-button-back uk-button uk-button-secondary">
+                        <i class="fas fa-arrow-left uk-margin-small-right"></i>
+                        Backward
+                    </button>
+                </div>
+            </header>
+
+            <!-- Section -->
+            <div class="uk-section">
+                <div class="uk-container">
+test
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <footer class="uk-section">
+            <div class="uk-container">
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- Off-canvas -->
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center">
+                <ul class="uk-nav">
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
