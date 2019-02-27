@@ -10,6 +10,9 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css" />
 
+    <!-- FA5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
@@ -17,75 +20,190 @@
 <body>
 
 <div class="uk-offcanvas-content">
-    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-background-default uk-flex uk-flex-wrap uk-flex-wrap-between">
         <div>
 
             <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
-                <nav uk-navbar>
+            <header class="tm-shadow-header uk-navbar-container uk-background-secondary uk-position-relative">
+                <nav class="uk-background-primary" uk-navbar>
                     <div class="uk-navbar-left">
-
-                        <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
-                           uk-navbar-toggle-icon uk-toggle></a>
 
                         <!--logo-->
                         <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo_tourweek.png" alt="">
+                            <img src="images/logo-header.png" alt="">
                         </a>
-
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#"></a></li>
-                            <li>
-                                <a href="#"></a>
-
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
 
                     </div>
 
-                    <div class="uk-navbar-center uk-visible@l"></div>
-
-                    <div class="uk-navbar-right"></div>
+                    <div class="uk-navbar-right">
+                        <!--mobile menu toggle-->
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle"
+                           uk-toggle>
+                            <div class="tm-button-menu uk-button-secondary">
+                                <img src="images/menu.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </nav>
+
+                <div>
+                    <button class="tm-button-back uk-button uk-button-secondary">
+                        <i class="fas fa-arrow-left uk-margin-small-right"></i>
+                        Backward
+                    </button>
+                </div>
+
+                <div class="tm-breadcrumb">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="/">Main</a></li>
+                        <li><span>Profile</span></li>
+                    </ul>
+                </div>
             </header>
 
             <!-- Section -->
             <div class="uk-section">
-                <div class="uk-container">
+                <div class="">
+                    <div class="tm-main">
+                        <h3 class="uk-margin-small">Take-on</h3>
+                        <div class="tm-panel uk-flex uk-flex-between uk-flex-middle">
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-margin-right">
+                                    <img src="images/user-img.png">
+                                </div>
+                                <div>
+                                    <h4>Georges St-Pierre</h4>
+                                    <div class="uk-grid-small" data-uk-grid>
+                                        <div>
+                                            Year: <span class="tm-digits">4</span>
+                                        </div>
+                                        <div>
+                                            Take-on win: <span class="tm-digits">8</span>
+                                        </div>
+                                        <div>
+                                            Points: <span class="tm-digits">222 000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tm-button-profile uk-button uk-button-secondary">Edit profile</button>
+                            </div>
+                        </div>
+                        <div class="tm-panel">
+                            <h5>Lorem Ipsum has been the standard dummy text!</h5>
+                            <div class="uk-grid-small uk-child-width-expand" data-uk-grid="">
+                                <div class="uk-width-auto">
+                                    <img src="images/v-battle.png" alt="">
+                                </div>
+                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                    <div class="uk-grid-small uk-child-width-1-2 uk-margin-bottom" data-uk-grid="">
+                                        <div>Started by Menova</div>
+                                        <div class="uk-text-right">Closed in <span>48</span>h</div>
+                                        <div>
+                                            Level:
 
+                                        </div>
+                                        <div class="uk-text-right">
+                                            №<span>99</span>
+                                        </div>
+                                    </div>
+                                    <div class="tm-text-box uk-margin-bottom">
+                                        <ol>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                            <li>tot</li>
+                                        </ol>
+                                    </div>
+                                    <button class="uk-button uk-button-primary uk-width-1-1">Open Take-on</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <!--Footer-->
-        <footer class="uk-section">
-            <div class="uk-container">
+        <footer class="">
+            <div class="tm-shadow-footer uk-navbar-container uk-background-secondary">
+                <nav uk-navbar>
+                    <div class="uk-navbar-left">
 
+                        <!--logo-->
+                        <a class="uk-navbar-item uk-logo" href="/">
+                            <img src="images/logo-footer.png" alt="">
+                        </a>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <!--mobile menu toggle-->
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle"
+                           uk-toggle>
+                            <div class="tm-button-menu uk-button-secondary">
+                                <img src="images/menu.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="tm-copyright uk-background-primary uk-text-center uk-padding-small">
+                    © 2019, Spinbol - world or pen spinning
+                </div>
             </div>
         </footer>
     </div>
 
     <!-- Off-canvas -->
-    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
         <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <button class="tm-close uk-offcanvas-close uk-button-secondary" type="button" data-uk-close="">
+            </button>
 
-            <div class="uk-card uk-flex uk-flex-center">
-                <ul class="uk-nav">
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="uk-height-1-1 uk-overflow-auto">
+                <div class="tm-min-height-1-1 uk-flex uk-flex-center uk-flex-middle">
+                    <div class="uk-text-center">
+                        <h2>Menu</h2>
+                        <ul class="uk-nav uk-margin-xlarge-bottom">
+                            <li><a href="#">Menu #1</a></li>
+                            <li><a href="#">Menu #2</a></li>
+                            <li><a href="#">Menu #3</a></li>
+                            <li><a href="#">Menu #4</a></li>
+                        </ul>
+                        <div class="uk-child-width-1-3 uk-grid-small" data-uk-grid>
+                            <div>
+                                <a href="#" class="tm-icon-social tm-icon-social-vk">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="tm-icon-social tm-icon-social-fb">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="tm-icon-social tm-icon-social-ig">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
