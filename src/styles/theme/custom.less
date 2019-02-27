@@ -1,10 +1,45 @@
 html {
   font-family: 'Geometria', sans-serif;
+  font-size: @font-size-global;
   color: @font-color-global;
+}
+
+h2 {
+  font-family: 'Geometria', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Geometria', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+a {
+  color: @font-color-link;
+
+  &.tm-link-alt {
+    color: @font-color-link-alt;
+  }
+}
+
+.uk-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .uk-background-primary {
   background-color: @bg-primary;
+}
+
+.uk-background-secondary {
+  background-color: @bg-secondary;
+}
+
+.uk-background-default {
+  background-color: @bg-default;
 }
 
 .uk-button {
@@ -21,6 +56,90 @@ html {
   &:hover, &:active {
     background: @bg-button-secondary-active;
   }
+}
+
+.uk-button-primary {
+  background: @bg-button-primary;
+  box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.1);
+
+  &:hover, &:active {
+    background: @bg-button-primary-active;
+  }
+}
+
+.uk-breadcrumb>*>* {
+  font-size: @font-size-global;
+  color: @font-color-link;
+}
+
+.uk-breadcrumb>:last-child>* {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 10px;
+  content: "\f0da";
+  margin: 0 5px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.uk-offcanvas-bar {
+  width: 480px;
+  max-width: 100%;
+  padding: 60px 20px 20px;
+  background: @bg-menu;
+
+  .uk-nav>li>a {
+    font-size: 18px;
+  }
+
+  .uk-close {
+    color: #fff;
+  }
+}
+
+.uk-offcanvas-close {
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  right: unset;
+  left: 20px;
+  padding: 5px;
+}
+
+.uk-form-large:not(textarea):not([multiple]):not([size]) {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.uk-form-large {
+  font-size: @font-size-global;
+}
+
+.uk-checkbox {
+  height: 15px;
+  width: 15px;
+  margin-top: -4px;
+  border: 1px solid rgba(51,51,51,0.5);
+  transition: .2s ease-in-out;
+  transition-property: background-color,border;
+  fill: red;
+}
+
+.uk-checkbox:checked, .uk-checkbox:focus, .uk-checkbox:active, .uk-checkbox:indeterminate {
+  background-color: transparent;
+  border-color: rgba(51,51,51,0.5);
+}
+
+.uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus {
+  background-color: transparent;
+}
+
+.uk-checkbox:checked {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23ff8f0c%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .tm-index-logo {
@@ -44,4 +163,104 @@ html {
 .tm-button-back {
   color: @font-color-global;
   border-radius: 0;
+  box-shadow: none;
+}
+
+.tm-copyright {
+  color: #fff;
+  font-size: 10px;
+}
+
+.tm-shadow-footer {
+  box-shadow: 0 -5px 10px 0 rgba(51, 51, 51, 0.1);
+}
+
+.tm-shadow-header {
+  box-shadow: 0 5px 10px 0 rgba(51, 51, 51, 0.1);
+}
+
+.tm-breadcrumb {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  padding: 10px 20px;
+
+  ul {
+    margin: 0;
+  }
+}
+
+a.tm-icon-social {
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: @font-color-default;
+  }
+}
+
+.tm-icon-social {
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+
+  &-large {
+    width: 135px;
+    font-size: 30px;
+  }
+
+  &-vk {
+    background-color: #527395;
+  }
+
+  &-fb {
+    background-color: #4a5ba6;
+  }
+
+  &-ig {
+    background: linear-gradient(0deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+  
+}
+
+.tm-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+
+  svg {
+    width: 12px;
+    height: 12px;
+
+    line {
+      stroke-width: 3px;
+    }
+  }
+}
+
+.tm-main {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.1);
+  max-width: 600px;
+  margin: auto;
+
+  >* {
+    padding: 15px 20px;
+  }
+
+  >:not(:last-child) {
+    border-bottom: 1px solid rgba(51,51,51,0.2);
+  }
+}
+
+.tm-button-submit {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
 }

@@ -20,11 +20,11 @@
 <body>
 
 <div class="uk-offcanvas-content">
-    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-background-default uk-flex uk-flex-wrap uk-flex-wrap-between">
         <div>
 
             <!--Header-->
-            <header class="uk-navbar-container uk-navbar-transparent uk-position-relative">
+            <header class="tm-shadow-header uk-navbar-container uk-background-secondary uk-position-relative">
                 <nav class="uk-background-primary" uk-navbar>
                     <div class="uk-navbar-left">
 
@@ -52,34 +52,144 @@
                         Backward
                     </button>
                 </div>
+
+                <div class="tm-breadcrumb">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="/">Main</a></li>
+                        <li><span>Login</span></li>
+                    </ul>
+                </div>
             </header>
 
             <!-- Section -->
             <div class="uk-section">
                 <div class="uk-container">
-test
+                    <div class="tm-main">
+                        <div class="uk-flex uk-flex-between">
+                            <h3>Login</h3>
+                            <div>
+                                <a href="#"><img src="images/close.svg"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="#">
+                                <div class="uk-margin-small">
+                                    <input class="uk-input uk-form-large" type="text" placeholder="Email or login">
+                                </div>
+                                <div class="uk-margin-small">
+                                    <input class="uk-input uk-form-large" type="text" placeholder="Password">
+                                </div>
+                                <div class="uk-margin-small">
+                                    <button class="tm-button-submit uk-button uk-button-primary" type="submit">Login to Spinbol</button>
+                                </div>
+                                <div class="uk-flex uk-flex-between">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Remember me</label>
+                                    </div>
+                                    <div>
+                                        <a href="#">Forgot password!</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="uk-child-width-auto uk-flex-center uk-grid-small uk-text-center" data-uk-grid>
+                                <div>
+                                    <a href="http://vk.com" class="tm-icon-social tm-icon-social-large tm-icon-social-vk">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://fb.com" class="tm-icon-social tm-icon-social-large tm-icon-social-fb">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://instagram.com" class="tm-icon-social tm-icon-social-large tm-icon-social-ig">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid-small uk-child-width-1-2 uk-text-center" data-uk-grid>
+                            <div>
+                                <a class="tm-link-alt" href="#">Not registered?</a>
+                            </div>
+                            <div>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <!--Footer-->
-        <footer class="uk-section">
-            <div class="uk-container">
+        <footer class="">
+            <div class="tm-shadow-footer uk-navbar-container uk-background-secondary">
+                <nav uk-navbar>
+                    <div class="uk-navbar-left">
 
+                        <!--logo-->
+                        <a class="uk-navbar-item uk-logo" href="/">
+                            <img src="images/logo-footer.png" alt="">
+                        </a>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <!--mobile menu toggle-->
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle"
+                           uk-toggle>
+                            <div class="tm-button-menu uk-button-secondary">
+                                <img src="images/menu.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="tm-copyright uk-background-primary uk-text-center uk-padding-small">
+                    © 2019, Spinbol - world or pen spinning
+                </div>
             </div>
         </footer>
     </div>
 
     <!-- Off-canvas -->
-    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-center uk-flex-middle">
+            <button class="tm-close uk-offcanvas-close uk-button-secondary" type="button" data-uk-close="">
+            </button>
 
-            <div class="uk-card uk-flex uk-flex-center">
-                <ul class="uk-nav">
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="uk-card uk-flex uk-flex-center uk-flex-middle">
+                <div class="uk-text-center">
+                    <h2>Menu</h2>
+                    <ul class="uk-nav uk-margin-xlarge-bottom">
+                        <li><a href="#">Menu #1</a></li>
+                        <li><a href="#">Menu #2</a></li>
+                        <li><a href="#">Menu #3</a></li>
+                        <li><a href="#">Menu #4</a></li>
+                    </ul>
+                    <div class="uk-child-width-1-3 uk-grid-small" data-uk-grid>
+                        <div>
+                            <a href="http://vk.com" class="tm-icon-social tm-icon-social-vk">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://fb.com" class="tm-icon-social tm-icon-social-fb">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://instagram.com" class="tm-icon-social tm-icon-social-ig">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
