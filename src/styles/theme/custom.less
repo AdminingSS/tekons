@@ -27,6 +27,7 @@ h5 {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 12px;
+  margin: 0;
 }
 
 a {
@@ -346,6 +347,106 @@ a.tm-icon-social {
   border: 1px dashed #d6d6d6;
 }
 
-.tm-button-about {
+.tm-button-short {
   width: 120px;
+}
+
+.tm-takeon-add {
+
+  label {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .uk-select {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: '\f0d7';
+      color: #000;
+      font-size: 16px;
+    }
+  }
+
+  .uk-select:not([multiple]):not([size]) {
+    background: none;
+  }
+
+  .uk-accordion-title {
+    background-color: @bg-primary;
+    border-radius: 3px;
+    font-family: 'Geometria', sans-serif;
+    font-size: 16px;
+    color: @font-color-default;
+    padding: 15px 20px;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      background: none;
+      content: '\f0d7';
+    }
+  }
+
+  .uk-accordion-content {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .uk-open>.uk-accordion-title::before {
+    content: '\f0d8';
+  }
+}
+
+.tm-rating.uk-pagination {
+  margin: 0;
+
+  >* {
+    padding-left: 5px;
+  }
+
+  li>a, li>span {
+    min-width: 13px;
+    min-height: 12px;
+    background-image: url('/images/star-empty.png');
+    background-size: contain;
+  }
+
+  li>a:hover {
+    background-image: url('/images/star-filled.png');
+  }
+
+  li.uk-active>a, li.uk-active>span {
+    background-image: url('/images/star-filled.png');
+  }
+}
+
+.tm-rating-set.uk-pagination {
+
+  height: 40px;
+
+  >* {
+    padding-left: 10px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  li>a {
+    min-width: 23px;
+    min-height: 21px;
+    line-height: 40px;
+  }
 }
