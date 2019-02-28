@@ -61,6 +61,15 @@ a {
   font-size: 12px;
 }
 
+.uk-button-primary {
+  background: @bg-button-primary;
+  box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.1);
+
+  &:hover, &:active {
+    background: @bg-button-primary-active;
+  }
+}
+
 .uk-button-secondary {
   background: @bg-button-secondary;
   box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.1);
@@ -70,14 +79,14 @@ a {
   }
 }
 
-.uk-button-primary {
-  background: @bg-button-primary;
-  box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.1);
+.uk-button-default {
 
   &:hover, &:active {
-    background: @bg-button-primary-active;
+    //background: @bg-button-secondary-active;
   }
 }
+
+
 
 .uk-breadcrumb>*>* {
   font-size: @font-size-global;
@@ -319,4 +328,24 @@ a.tm-icon-social {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+
+//.tm-about-image-wrapper {
+//  position: relative;
+//  padding-bottom: 100%;
+//}
+
+.tm-about-image {
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  //top: 0;
+  width: 336px;
+  height: 336px;
+  border: 1px dashed #d6d6d6;
+}
+
+.tm-button-about {
+  width: 120px;
 }
