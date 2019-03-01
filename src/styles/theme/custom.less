@@ -236,11 +236,6 @@ a.tm-icon-social {
   font-size: 20px;
   color: #fff;
 
-  &-large {
-    width: 135px;
-    font-size: 30px;
-  }
-
   &-vk {
     background-color: #527395;
   }
@@ -505,10 +500,33 @@ a.tm-icon-social {
   min-height: 331px;
 }
 
+.tm-login-form {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    bottom: -9px;;
+    left: calc(50% - 18px);
+    background-color: #fff;
+    content: 'or';
+    padding: 0 15px;
+    color: rgba(51, 51, 51, 0.6);
+  }
+}
 
 
 
-@media (max-width: 959px) {
+@media (min-width: 640px) {
+
+  .tm-icon-social-large {
+    width: 135px;
+    font-size: 30px;
+  }
+
+  .tm-index-logo {
+    margin-bottom: 40px;
+  }
   //.tm-button-short {
   //  width: 100%;
   //}
