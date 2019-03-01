@@ -299,6 +299,34 @@ a.tm-icon-social {
   font-family: Montserrat, sans-serif;
 }
 
+.tm-panel-segmented {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.1);
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+
+  >* {
+    padding: 20px;
+    border-bottom: 2px solid #f6f5f3;
+
+    &:first-child {
+      background-color: @bg-primary;
+      border-bottom: none;
+
+      h4 {
+        font-family: Geometria, sans-serif;
+        color: @font-color-default;
+        margin: 0;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
 .tm-button-submit {
   height: 50px;
   line-height: 50px;
@@ -324,11 +352,25 @@ a.tm-icon-social {
 .tm-text-box {
   border-radius: 3px;
   border: solid 1px #d6d6d6;
-  max-height: 230px;
+  max-height: 197px;
+  height: 197px;
   overflow-y: auto;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 16px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  ol {
+    padding-left: 15px;
+  }
+}
+
+.tm-comment-box {
+  max-height: 105px;
+  height: 105px;
+  font-size: 12px;
+  padding: 15px 20px;
 }
 
 //.tm-about-image-wrapper {
@@ -454,6 +496,10 @@ a.tm-icon-social {
     min-height: 21px;
     line-height: 40px;
   }
+}
+
+.tm-tekon-rightside {
+  min-height: 361px;
 }
 
 .tm-new-tekon-rightside {
