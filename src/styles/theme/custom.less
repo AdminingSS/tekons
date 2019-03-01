@@ -21,6 +21,7 @@ h4 {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 h5 {
@@ -73,9 +74,11 @@ a {
 
 .uk-button-secondary {
   background: @bg-button-secondary;
+  color: #333333;
   box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.1);
 
   &:hover, &:active {
+    color: #333333;
     background: @bg-button-secondary-active;
   }
 }
@@ -177,6 +180,7 @@ a {
   height: 50px;
   line-height: 50px;
   width: 190px;
+  color: @font-color-default;
 }
 
 .tm-button-menu {
@@ -247,7 +251,7 @@ a.tm-icon-social {
   &-ig {
     background: linear-gradient(0deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   }
-  
+
 }
 
 .tm-close {
@@ -344,7 +348,8 @@ a.tm-icon-social {
 .tm-button-profile {
   height: 50px;
   line-height: 50px;
-  width: 230px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .tm-text-box {
@@ -515,8 +520,6 @@ a.tm-icon-social {
   }
 }
 
-
-
 @media (min-width: 640px) {
 
   .tm-icon-social-large {
@@ -531,3 +534,102 @@ a.tm-icon-social {
   //  width: 100%;
   //}
 }
+@media (min-width: 640px) and (max-width: 767px) {
+  .tm-video-img {
+    max-width: 270px;
+  }
+
+  .tm-text-box {
+    max-height: 150px;
+    height: 150px;
+  }
+
+  .tm-tekons .tm-text-box {
+    max-height: 267px;
+    height: 267px;
+  }
+
+  .tm-tekons .tm-comment-box {
+    max-height: 98px;
+    height: 98px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tm-visible-sm {
+    display: none;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .tm-about-image {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .tm-button-profile {
+    width: 230px;
+    margin: 0;
+  }
+
+  .tm-width-auto-sm {
+    width: auto;
+  }
+
+  .tm-hidden-sm {
+    display: none;
+  }
+
+  .tm-video-img {
+    max-width: 450px;
+  }
+
+  .tm-text-box {
+    max-height: 121px;
+    height: 121px;
+  }
+
+  .tm-comment-box {
+    max-height: 98px;
+    height: 98px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 959px) {
+  .tm-tekons .tm-text-box {
+    max-height: 367px;
+    height: 367px;
+  }
+
+  .tm-tekons .tm-comment-box {
+    max-height: 98px;
+    height: 98px;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .tm-index-button {
+    color: #333333;
+  }
+
+  .tm-video-img {
+    max-width: 650px;
+  }
+
+  .tm-text-box {
+    max-height: 197px;
+    height: 197px;
+  }
+
+  .tm-comment-box {
+    max-height: 91px;
+    height: 91px;
+  }
+}
+
