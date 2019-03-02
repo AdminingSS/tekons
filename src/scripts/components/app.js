@@ -59,4 +59,15 @@ $(document).ready(function () {
         })
     })();
 
+    (()=> {
+        const $uploadFile = $('.upload-file');
+        const $uploadImg = $('.upload-img');
+        const $uploadVideo = $('.upload-video');
+
+        $uploadFile.on('change', function () {
+            if(!$uploadImg.hasClass('uk-hidden')) $uploadImg.addClass('uk-hidden');
+            if($uploadVideo.hasClass('uk-hidden')) $uploadVideo.removeClass('uk-hidden');
+        });
+    })();
+
 });
