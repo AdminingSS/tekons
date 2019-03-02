@@ -63,11 +63,19 @@ $(document).ready(function () {
         const $uploadFile = $('.upload-file');
         const $uploadImg = $('.upload-img');
         const $uploadVideo = $('.upload-video');
+        const $buttonReset = $('.button-reset-form');
 
         $uploadFile.on('change', function () {
             if(!$uploadImg.hasClass('uk-hidden')) $uploadImg.addClass('uk-hidden');
             if($uploadVideo.hasClass('uk-hidden')) $uploadVideo.removeClass('uk-hidden');
         });
+
+        $buttonReset.on('click', function () {
+            if($uploadImg.hasClass('uk-hidden')) $uploadImg.removeClass('uk-hidden');
+            if(!$uploadVideo.hasClass('uk-hidden')) $uploadVideo.addClass('uk-hidden');
+        });
+
+
     })();
 
 });
