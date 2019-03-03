@@ -82,7 +82,12 @@ $(document).ready(function () {
         const $editableForms = $('.tm-editable');
 
         $editableForms.each(function () {
-            const $commentField = $('textarea.tm-comment-box');
+            const $commentField = $(this).find('textarea.tm-comment-box');
+            const $breakdownList = $(this).find('.tm-text-box ol');
+            const $breakdownInput = $(this).find('.tm-text-box-edit input');
+            const baseListLength = $breakdownList.find('li').length;
+            const $buttonReset = $(this).find('.button-reset-form');
+
 
             $commentField.on('change', function () {
                 const $currentElem = $(this);
@@ -93,6 +98,33 @@ $(document).ready(function () {
                         $(this).val(text);
                     }
                 });
+            });
+
+            $breakdownInput.on('change', function () {
+                const $currentElem = $(this);
+                const text = $currentElem.val();
+                const currentListLength = $breakdownList.find('li').length;
+
+                if(currentListLength === baseListLength) {
+                    if (text === '') return;
+                    $breakdownList.append($("<li>").text(text));
+                }
+                else {
+                    if (text === '') {
+                        $breakdownList.find('li').last().remove();
+                        return;
+                    }
+                    $breakdownList.find('li').last().text(text);
+                }
+
+            });
+
+            $buttonReset.on('click', function () {
+                const currentListLength = $breakdownList.find('li').length;
+
+                if(currentListLength !== baseListLength) {
+                    $breakdownList.find('li').last().remove();
+                }
             });
         });
 
