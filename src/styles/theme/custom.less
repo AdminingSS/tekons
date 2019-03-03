@@ -56,6 +56,10 @@ a {
   background-color: @bg-default;
 }
 
+.uk-background-muted {
+  background-color: #666666;
+}
+
 .uk-button {
   font-family: 'Geometria', sans-serif;
   text-transform: none;
@@ -384,6 +388,7 @@ a.tm-icon-social {
   height: 105px;
   font-size: 12px;
   padding: 15px 20px;
+  width: 100%;
 }
 
 //.tm-about-image-wrapper {
@@ -455,16 +460,16 @@ a.tm-icon-social {
   li>a, li>span {
     min-width: 13px;
     min-height: 12px;
-    background-image: url('/images/star-empty.png');
+    background-image: url('../../images/star-empty.png');
     background-size: contain;
   }
 
   li>a:hover {
-    background-image: url('/images/star-filled.png');
+    background-image: url('../../images/star-filled.png');
   }
 
   li.uk-active>a, li.uk-active>span {
-    background-image: url('/images/star-filled.png');
+    background-image: url('../../images/star-filled.png');
   }
 }
 
@@ -521,6 +526,27 @@ a.tm-icon-social {
 
 iframe.uk-cover {
   pointer-events: auto;
+}
+
+.tm-winner {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: -15px;
+    left: -15px;
+    width: 36px;
+    height: 34px;
+    line-height: 36px;
+    border-radius: 50%;
+    background: @bg-button-secondary;
+    content: 'WIN';
+    font-weight: 700;
+    font-size: 10px;
+    color: @font-color-default;
+  }
 }
 
 @media (max-width: 639px) {

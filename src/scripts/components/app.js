@@ -78,4 +78,23 @@ $(document).ready(function () {
 
     })();
 
+    (()=> {
+        const $editableForms = $('.tm-editable');
+
+        $editableForms.each(function () {
+            const $commentField = $('textarea.tm-comment-box');
+
+            $commentField.on('change', function () {
+                const $currentElem = $(this);
+                const text = $currentElem.val();
+
+                $commentField.each(function () {
+                    if($currentElem !== $(this)) {
+                        $(this).val(text);
+                    }
+                });
+            });
+        });
+
+    })();
 });
